@@ -48,9 +48,15 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 // a tags
 let anchorTags = document.querySelectorAll("a");
+anchorTags[0].textContent = siteContent["nav"]["nav-item-1"];
+anchorTags[1].textContent = siteContent["nav"]["nav-item-2"];
+anchorTags[2].textContent = siteContent["nav"]["nav-item-3"];
+anchorTags[3].textContent = siteContent["nav"]["nav-item-4"];
+anchorTags[4].textContent = siteContent["nav"]["nav-item-5"];
+anchorTags[5].textContent = siteContent["nav"]["nav-item-6"];
 //button
 const btn = document.getElementsByTagName("button");
-
+btn.textContent = siteContent["cta"]["button"];
 //Main header H1
 const mainHeader = document.getElementsByTagName("h1");
 //Cta image
