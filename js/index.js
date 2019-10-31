@@ -55,10 +55,12 @@ anchorTags[3].textContent = siteContent["nav"]["nav-item-4"];
 anchorTags[4].textContent = siteContent["nav"]["nav-item-5"];
 anchorTags[5].textContent = siteContent["nav"]["nav-item-6"];
 //button
-const btn = document.getElementsByTagName("button");
+const btn = document.querySelector("button");
 btn.textContent = siteContent["cta"]["button"];
+btn.style.color = "black"
+
 //Main header H1
-const mainHeader = document.getElementsByTagName("h1");
+const mainHeader = document.querySelector("h1");
 mainHeader.textContent = siteContent["cta"]["h1"];
 //Cta image
 const ctaImg = document.getElementById("cta-img");
@@ -83,7 +85,7 @@ mainImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 //Contact
 const contactInfo = document.querySelector(".contact h4")
-contactInfo.innerHTML = siteContent["contact"]["contact-h4"]
+contactInfo.textContent = siteContent["contact"]["contact-h4"]
 let addressInfo = document.querySelectorAll('.contact p');
 addressInfo[0].textContent = siteContent["contact"]["address"] 
 addressInfo[1].textContent = siteContent["contact"]["phone"] 
