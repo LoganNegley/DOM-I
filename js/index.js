@@ -48,12 +48,10 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
 // a tags
 let anchorTags = document.querySelectorAll("a");
-anchorTags[0].textContent = siteContent["nav"]["nav-item-1"];
-anchorTags[1].textContent = siteContent["nav"]["nav-item-2"];
-anchorTags[2].textContent = siteContent["nav"]["nav-item-3"];
-anchorTags[3].textContent = siteContent["nav"]["nav-item-4"];
-anchorTags[4].textContent = siteContent["nav"]["nav-item-5"];
-anchorTags[5].textContent = siteContent["nav"]["nav-item-6"];
+anchorTags.forEach(function(item, i){
+   item.textContent = Object.values(siteContent.nav)[i];
+})
+
 
 //Changing all a tags to green
 let changedAnchorTags = document.querySelectorAll("a");
@@ -61,9 +59,24 @@ changedAnchorTags.forEach(function(item){
 item.style.color = 'green'
 })
 
-// Adding anchor tags to nav
-let newNode = document.createElement('a');
+// Adding nav link to nav with prepend
+let newElement = document.createElement('a');
+newElement.textContent = "Stories";
+newElement.style.color = 'green'
+newElement.href = "#";
 
+const parentElement = document.querySelector("nav");
+
+parentElement.prepend(newElement)
+
+// Adding nav link with .childAppend
+
+const newElement2 = document.createElement('a');
+newElement2.textContent = "Portfolio";
+newElement2.href = "#";
+newElement2.style.color = "green";
+
+parentElement.appendChild(newElement2);
 
 
 
@@ -80,11 +93,14 @@ const ctaImg = document.getElementById("cta-img");
 ctaImg.src = siteContent["cta"]["img-src"];
 //h4s
 const headerFours = document.querySelectorAll("h4");
+
 headerFours[0].textContent = siteContent["main-content"]["features-h4"];
 headerFours[1].textContent = siteContent["main-content"]["about-h4"];
 headerFours[2].textContent = siteContent["main-content"]["services-h4"];
 headerFours[3].textContent = siteContent["main-content"]["product-h4"];
 headerFours[4].textContent = siteContent["main-content"]["vision-h4"];
+
+
 //paragraphs
 const paragraphs = document.querySelectorAll("p");
 paragraphs[0].textContent = siteContent["main-content"]["features-content"];
@@ -101,9 +117,10 @@ const contactInfo = document.getElementsByTagName("h4");
 contactInfo[5].textContent = siteContent["contact"]["contact-h4"];
 
 let addressInfo = document.querySelectorAll('.contact p');
-addressInfo[0].textContent = siteContent["contact"]["address"]; 
-addressInfo[1].textContent = siteContent["contact"]["phone"]; 
-addressInfo[2].textContent = siteContent["contact"]["email"]; 
+addressInfo.forEach(function(item, i){
+item.textContent = Object.values(siteContent.contact)[i]
+})
+ 
 //footer
 const footer = document.querySelector("footer");
 footer.textContent = siteContent["footer"]["copyright"];
