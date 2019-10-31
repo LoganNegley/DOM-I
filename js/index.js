@@ -59,13 +59,27 @@ const btn = document.getElementsByTagName("button");
 btn.textContent = siteContent["cta"]["button"];
 //Main header H1
 const mainHeader = document.getElementsByTagName("h1");
+mainHeader.textContent = siteContent["cta"]["h1"];
 //Cta image
 const ctaImg = document.getElementById("cta-img");
-
+ctaImg.src = siteContent["cta"]["img-src"];
 //h4s
 const headerFours = document.querySelectorAll("h4");
+headerFours[0].textContent = siteContent["main-content"]["features-h4"];
+headerFours[1].textContent = siteContent["main-content"]["about-h4"];
+headerFours[2].textContent = siteContent["main-content"]["services-h4"];
+headerFours[3].textContent = siteContent["main-content"]["product-h4"];
+headerFours[4].textContent = siteContent["main-content"]["vision-h4"];
 //paragraphs
 const paragraphs = document.querySelectorAll("p");
-
+paragraphs[0].textContent = siteContent["main-content"]["features-content"];
+paragraphs[1].textContent = siteContent["main-content"]["about-content"];
+paragraphs[2].textContent = siteContent["main-content"]["service-content"];
+paragraphs[3].textContent = siteContent["main-content"]["product-content"];
+paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
 //Middle Image
 const middleImg = document.getElementById("middle-img");
+middleImg.src = ["main-content"]["middle-img-src"];
+
+//footer
+const footer = document.getElementsByTagName("footer");
