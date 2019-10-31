@@ -55,9 +55,13 @@ anchorTags[3].textContent = siteContent["nav"]["nav-item-4"];
 anchorTags[4].textContent = siteContent["nav"]["nav-item-5"];
 anchorTags[5].textContent = siteContent["nav"]["nav-item-6"];
 
+//Changing all a tags to green
 let changedAnchorTags = document.querySelectorAll("a");
-//changedAnchorTags.style.color = 'green';
-console.log(changedAnchorTags)
+changedAnchorTags.forEach(function(item){
+item.style.color = 'green'
+})
+
+
 //button
 const btn = document.querySelector("button");
 btn.textContent = siteContent["cta"]["button"];
