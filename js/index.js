@@ -55,6 +55,7 @@ anchorTags[3].textContent = siteContent["nav"]["nav-item-4"];
 anchorTags[4].textContent = siteContent["nav"]["nav-item-5"];
 anchorTags[5].textContent = siteContent["nav"]["nav-item-6"];
 
+
 //Changing all a tags to green
 let changedAnchorTags = document.querySelectorAll("a");
 changedAnchorTags.forEach(function(item){
@@ -92,12 +93,12 @@ let mainImg = document.getElementById("middle-img");
 mainImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 //Contact
-const contactInfo = document.querySelector(".contact h4")
-contactInfo.textContent = siteContent["contact"]["contact-h4"]
+const contactInfo = document.querySelector(".contact h4");
+contactInfo.textContent = siteContent["contact"]["contact-h4"];
 let addressInfo = document.querySelectorAll('.contact p');
-addressInfo[0].textContent = siteContent["contact"]["address"] 
-addressInfo[1].textContent = siteContent["contact"]["phone"] 
-addressInfo[2].textContent = siteContent["contact"]["email"] 
+addressInfo[0].textContent = siteContent["contact"]["address"]; 
+addressInfo[1].textContent = siteContent["contact"]["phone"]; 
+addressInfo[2].textContent = siteContent["contact"]["email"]; 
 //footer
 const footer = document.querySelector("footer");
 footer.textContent = siteContent["footer"]["copyright"];
