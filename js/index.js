@@ -82,7 +82,12 @@ let mainImg = document.getElementById("middle-img");
 mainImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 //Contact
-
-
+const contactInfo = document.querySelector(".contact h4")
+contactInfo.innerHTML = siteContent["contact"]["contact-h4"]
+let addressInfo = document.querySelectorAll('.contact p');
+addressInfo[0].textContent = siteContent["contact"]["address"] 
+addressInfo[1].textContent = siteContent["contact"]["phone"] 
+addressInfo[2].textContent = siteContent["contact"]["email"] 
 //footer
-const footer = document.getElementsByTagName("footer");
+const footer = document.querySelector("footer");
+footer.textContent = siteContent["footer"]["copyright"];
