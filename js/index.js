@@ -78,8 +78,11 @@ paragraphs[2].textContent = siteContent["main-content"]["service-content"];
 paragraphs[3].textContent = siteContent["main-content"]["product-content"];
 paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
 //Middle Image
-const middleImg = document.getElementById("middle-img");
+const middleImg = document.getElementsByClassName("middle-img");
 middleImg.src = ["main-content"]["middle-img-src"];
+
+//Contact
+
 
 //footer
 const footer = document.getElementsByTagName("footer");
