@@ -54,6 +54,10 @@ anchorTags[2].textContent = siteContent["nav"]["nav-item-3"];
 anchorTags[3].textContent = siteContent["nav"]["nav-item-4"];
 anchorTags[4].textContent = siteContent["nav"]["nav-item-5"];
 anchorTags[5].textContent = siteContent["nav"]["nav-item-6"];
+
+let changedAnchorTags = document.querySelectorAll("a");
+//changedAnchorTags.style.color = 'green';
+console.log(changedAnchorTags)
 //button
 const btn = document.querySelector("button");
 btn.textContent = siteContent["cta"]["button"];
@@ -76,7 +80,7 @@ headerFours[4].textContent = siteContent["main-content"]["vision-h4"];
 const paragraphs = document.querySelectorAll("p");
 paragraphs[0].textContent = siteContent["main-content"]["features-content"];
 paragraphs[1].textContent = siteContent["main-content"]["about-content"];
-paragraphs[2].textContent = siteContent["main-content"]["service-content"];
+paragraphs[2].textContent = siteContent["main-content"]["services-content"];
 paragraphs[3].textContent = siteContent["main-content"]["product-content"];
 paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
 //Middle Image
