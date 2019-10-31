@@ -50,9 +50,16 @@ logo.setAttribute("src", siteContent["nav"]["img-src"]);
 let anchorTags = document.querySelectorAll("a");
 //button
 const btn = document.getElementsByTagName("button");
-//Middle Image
-const middleImg = document.getElementById("middle-img");
+
 //Main header H1
 const mainHeader = document.getElementsByTagName("h1");
 //Cta image
 const ctaImg = document.getElementById("cta-img");
+
+//h4s
+const headerFours = document.querySelectorAll("h4");
+//paragraphs
+const paragraphs = document.querySelectorAll("p");
+
+//Middle Image
+const middleImg = document.getElementById("middle-img");
